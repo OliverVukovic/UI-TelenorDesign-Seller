@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+body {
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorbody);
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--colornav);
+    color: var(--colorbody);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center ;
+    position: fixed;
+}
+
+.central-nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.navigation {
+    color: var(--colorbody);
+    font-size: 24px;
+    text-decoration: none;
+}
+.navigation:hover {
+    color: var(--colorlang);
+}
+
+.right-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.pick-a-color {
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--colorbody);
+    cursor: pointer;
+}
+
+.language {
+    color: var(--colorlang);
+    cursor: pointer;
+}
+
+.language-dropdown {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 70px;
+    height: auto;
+    gap: 15px;
+    margin-top: 35px;
+    margin-bottom: -150px;
+    display: none;
+}
+
+.flag {
+    width: 60px;
+    height: 35px;
+    cursor: pointer;
+}
+.flag:hover {
+    opacity: 50%;
+}
+
+.product-page {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 100px;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
+
+.photo-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code {
+    /* visibility: hidden; */
+    font-size: 24px;
+    color: var(--colornav);
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--colornav);
+}
+
+.small-headline {
+    font-size: 24px;
+    background-color: #307dc1;
+    width: 98%;
+    text-align: center;
+    border: 1px solid #307dc1;
+    color: var(--colorsmart);
+    padding: 10px;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+.options {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 34px;
+    color: var(--colornav);
+}
+
+p {
+    font-size: 20px;
+    color: var(--colornav);
+}
+
+table {
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.6);
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+td {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 7px;
+    padding-left: 17px;
+    font-size: 20px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.small-headline-1 {
+    font-size: 24px;
+    background-color: #307dc1;
+    width: 86%;
+    text-align: center;
+    border: 1px solid #307dc1;
+    color: var(--colorsmart);
+    padding: 10px;
+    margin-left: 145px;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+button {
+    background-color: rgb(43, 108, 228);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: var(--colorsmart);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+.monitor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prodajne-vrednosti {
+    margin-right: 70px;
+}
+
+video {
+    width: 87%;
+    height: auto;
+    border: 1px solid var(--colornav);
+    padding: 5px;
+    box-shadow: -2px 1px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+.active {
+    color: violet;
+}
+
+.specification {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.spec-table {
+    background-color: #d0f8ff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    color: black;
+    border-radius: 8px;
+}
+
+.spec-table > :nth-child(even){
+    background-color: var(--colorsmart);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row:hover {
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+ul {
+    display: none;
+    width: 50%;
+}
+
+ul.visible {
+    display: block;
+}
+
+li {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);;
+}
+li:hover {
+    background-color: whitesmoke;
+    width: 99%;
+}
+
+.ab {
+    width: 50%;
+    text-decoration: none;
+    color: #307dc1;
+}
+
+span {
+    padding: 15px;
+    font-weight: 700;
+}
+
+
+
+.light-version {
+    --colorbody: #FFFFFF;
+    --colornav: #000000;
+    --colorsmart: #ffffff;
+    --colorlang: #d0f8ff;
+    --logoimg: url("./images/telenor-logo-black.jpg");
+    --watchimg: url("./images/Huawei-Watch3Pro.jpg");
+}
+
+.dark-version {
+    --colorbody: #000000;
+    --colornav: #ffffff;
+    --colorsmart: #ffffff;
+    --colorlang: #307dc1;
+    --logoimg: url("./images/telenor-logo-white.jpg");
+    --watchimg: url("./images/Huawei-Watch3Pro-black.jpg");
+}
+
+.black {
+    display: none;
+}

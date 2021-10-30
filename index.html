@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x24" href="./images/logo.png">
+    <title>UI-Design</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="light-version">
+    <section>
+        <header>
+            <nav>
+                <div>
+                    <img class="white01" src="./images/telenor-logo-black.jpg" alt="logo-black">
+                    <img class="black" src="./images/telenor-logo-white.jpg" alt="logo-white">
+                </div>
+
+                <div class="central-nav">
+                    <div>
+                        <a href="#" class="navigation">POČETNA</a>
+                    </div>
+                    <div>
+                        <a href="#" class="navigation">PROIZVODI</a>
+                    </div>
+                    <div>
+                        <a href="#" class="navigation">USLUGE</a>
+                    </div>
+                    <div>
+                        <a href="#" class="navigation">KONTAKT</a>
+                    </div>
+                </div>
+
+                <div class="right-part">
+                    <div class="color" id="dark-mode" onclick="changeColor()"></div>
+                
+                    <div class="pick-a-language">
+                        <div onclick="langMenu()" class="language">Jezik</div>
+                        <div class="language-dropdown" id="lang-drop">
+                            <div class="flag"><img src="./images/srb.svg" alt="srb"></div>
+                            <div class="flag"><img src="./images/uk.svg" alt="eng"></div>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </nav>
+            
+            <div class="product-page">
+                <div class="photo-price">
+                    <img class="white02" src="./images/Huawei-Watch3Pro.jpg" alt="watch-image">
+                    <img class="black" src="./images/Huawei-Watch3Pro-black.jpg" alt="watch-image">
+                    <h3 class="code">ERP sifra: 14893</h3>
+                    <h2>Cena: 64,800 din</h2>
+                </div>
+                
+                <div>
+                    <h1>HUAWEI WATCH 3 PRO</h1><br><br>
+                    <p>Brine o tebi - Da li si pod stresom? Huawei Watch 3 PRO ce ti dati odgovor. Pored toga pratice tvoj put, temperaturu koze i saturaciju tokom celog dana. U aplikaciji na telefonu bilo kom trenutku proveri kako si spavao jer ovaj sat prati i tvoj san.</p><br>
+                    <p>Zauzete su ti ruke? - Mozes da razgovaras preko ovog sata, a naravno i da vidis obavestenja koja ti stignu.</p><br>
+                    <p>Muzika bez telefona - Ako imas BT slusalice, mozes slusati muziku direktno sa ovog sata dok trcis ili vozis bicikl.</p><br>
+                    <p>Dugo trajanje baterije, izvrstan dizajn, praćenje poziva i poruka, praćenje zdravlja 24/7, praćenje temperature kože 100 režima vežbanja.</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="options">
+            <h3 class="small-headline">Pametne opcije</h3>
+            <table>
+                <tr>
+                    <td>Podrzava razgovore</td>
+                    <td>Da</td>
+                </tr>
+                <tr>
+                    <td>Prima obavestenja i poruke</td>
+                    <td>Poziv, sMS, Viber, Whatsapp</td>
+                </tr>
+                <tr>
+                    <td>Meri puls</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Meri krvni pritisak</td>
+                    <td>Ne</td>
+                  </tr>
+                  <tr>
+                    <td>Meri nivo kiseonika u krvi - saturacijae</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Pedometar</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Kompas</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Ziroskop</td>
+                    <td>Da</td>
+                  </tr>
+                  <td>Pedometar</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Akcelerometar</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Atmosferski pritisak</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Spoljna temperatura</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Analiza sna</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Podsetnik na neaktivnost</td>
+                    <td>Da</td>
+                  </tr>
+                  <td>Pronadji moj telefon</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Uvek ukljucen ekran</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>Jacina svetla</td>
+                    <td>Da</td>
+                  </tr>
+                  <tr>
+                    <td>SBroj vezbi koje podrzava</td>
+                    <td>100+</td>
+                  </tr>
+                  <tr>
+                    <td>Snimanje rute pomocu GPS-a na telefonu</td>
+                    <td>Da</td>
+                  </tr>
+              </table>
+        </div>
+
+        <div class="player">
+            <h3 class="small-headline-1">Prodajne prednosti</h3>
+            <div class="monitor">
+                <button type="button" id="play-buton" onclick="playVideo()">Play</button>
+                <video src="./video/huawei-video.mp4" id="video"></video>
+            </div>
+            <div >
+                <p>Ako ne mozes da pokrenes video, pokusaj pokretanje sa ovog <a href="#" class="active">linka</a>.</p><br><br>
+            </div>
+        </div>
+
+        <div class="specification">
+            <div>
+                <img class="white03" src="./images/specification-black.png" alt="specification-white">
+                <img class="black" src="./images/specification-white.png" alt="specification-black">
+            </div>
+            <br><h3 class="small-headline">Specifikacija</h3>
+
+            <div class="spec-table">
+
+                <div class="row">
+                    <h4 class="ab"><span>></span>KUĆIŠTE</h4>
+                        <ul id="dropdown-menu">
+                            <li>48 x 49.6 x 14mm</li>
+                            <li>Titanijum</li>
+                            <li>Safirno staklo</li>
+                            <li>Keramika</li>
+                        </ul>  
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>TEŽINA</h4>
+                    <ul id="dropdown-menu">
+                            <li>64g</li>
+                        </ul>  
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>NARUKVICA</h4>
+                        <ul>
+                            <li>22mm</li>
+                        </ul>  
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>BATERIJA</h4>
+                        <ul>
+                            <li>90mAh, do 5 dana</li>
+                        </ul> 
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>EKRAN</h4>
+                        <ul>
+                            <li>1.43in AMOLED</li>
+                        </ul> 
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>WiFi / GPS</h4>
+                        <ul>
+                            <li>Da</li>
+                        </ul> 
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>VODOOTPORNOST</h4>
+                        <ul>
+                            <li>50m</li>
+                        </ul> 
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>PODRZANI OPERATIVNI SISTEMI</h4>
+                        <ul>
+                            <li>Harmony OS</li>
+                            <li>Android</li>
+                            <li>Apple iOS 9.0</li>
+                        </ul> 
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>MINIMUM BLUETOOT VERZIJA</h4>
+                        <ul>
+                            <li>5.1</li>
+                        </ul> 
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>ANDROID / iOS APP</h4>
+                    <ul>
+                        <li>Huawei Health</li>
+                    </ul> 
+                </div>
+        
+                <div class="row">
+                    <h4 class="ab"><span>></span>SADRŽAJ PAKOVANJA</h4>
+                    <ul>
+                        <li>Sat</li>
+                        <li>Punjac</li>
+                        <li>Dokumentacija</li>
+                    </ul> 
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
